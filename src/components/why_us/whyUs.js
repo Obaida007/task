@@ -1,12 +1,18 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import Group57 from "../../../assets/images/Group57@2x.png";
 import ScrollGroup5 from "../../../assets/images/ScrollGroup5@2x.png";
-import shutterstock_1902234202 from "../../../assets/images/shutterstock_1902234202@2x.png";
-import shutterstock_1701327436 from "../../../assets/images/shutterstock_1701327436@2x.png";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { WhyUsCards } from "@/common/why-us-cards";
 function WhyUs() {
+  const scrollableRef = useRef(null);
+
+  const handleScrollButtonClick = () => {
+    if (scrollableRef.current) {
+      scrollableRef.current.scrollLeft += 400; // Adjust the scroll amount as needed
+    }
+  };
   return (
     <div id="whyUs" className="why-us">
       <div className="why-us-body">
@@ -22,7 +28,7 @@ function WhyUs() {
             <div className="circle "></div>
           </div>
         </div>
-        <div className="imges">
+        <div className="imges" ref={scrollableRef}>
           <Image
             priority
             width={700}
@@ -37,7 +43,9 @@ function WhyUs() {
             </div>
           ))}
         </div>
-        <BsArrowRightCircle className="icon" color={"#fff"} />
+        <button onClick={handleScrollButtonClick}>
+          <BsArrowRightCircle className="icon" color={"#fff"} />
+        </button>
       </div>
       <div className="footer-why-us">
         <Image priority width={525} height={60} src={Group57} alt="Group57" />

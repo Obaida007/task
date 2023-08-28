@@ -10,6 +10,11 @@
         margin-top: 130px;
         display: flex;
 
+        button {
+            border: none;
+            background: transparent;
+        }
+
         .imges {
             display: flex;
             overflow: auto;
@@ -53,7 +58,6 @@
             width: 50px;
             position: relative;
             height: 100px;
-            top: 150px;
             left: 20px;
         }
 
