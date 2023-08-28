@@ -34,4 +34,6 @@ button {
 
 body {
   font-family: "Rubik-Regular" !important;
+    position: relative;
+  z-index: -111;
 }
