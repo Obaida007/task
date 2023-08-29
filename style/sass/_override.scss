@@ -1,0 +1,23 @@
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #fff !important;
+}
+
+.menu-class {
+    background-color: transparent !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+    color: #fff;
+    outline: none !important;
+
+    .navbar-toggler-icon {
+        background-image: var(--on-primary) !important;
+
+        .icon-menu {
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+}

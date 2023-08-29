@@ -1,121 +1,111 @@
 .why-us {
-
     background-color: var(--background-header);
-    padding: 0 47px;
-    display: flex;
-    flex-direction: column;
-    gap: 90px;
+    padding: 150px 47px;
 
-    .why-us-body {
-        margin-top: 130px;
+
+    button {
+        border: none;
+        background: transparent;
+    }
+
+    .imges {
         display: flex;
+        overflow: auto;
+        width: 800px;
 
-        button {
-            border: none;
-            background: transparent;
-        }
-
-        .imges {
-            display: flex;
-            overflow: auto;
-            width: 800px;
-            height: 447px;
-
-            .card {
-                margin: 0 10px;
-                display: flex;
-                flex-direction: column;
-
-                .att-card {
-                    text-align: center;
-                    padding: 49px;
-                    font-size: 20px;
-                    font-family: 'Rubik', sans-serif;
-                    font-weight: 900;
-                    color: var(--background-header);
-                    background-color: var(--on-primary);
-                    border-radius: 0 0 5px 5px;
-                }
-            }
-
-            &::-webkit-scrollbar {
-                width: 0.3em;
-                /* Set the width of the scrollbar */
-            }
-
-            &::-webkit-scrollbar-thumb {
-                background-color: transparent;
-                /* Make the thumb transparent */
-            }
-
-            &::-webkit-scrollbar-track {
-                background-color: transparent;
-                /* Make the track transparent */
-            }
-        }
-
-        .icon {
-            width: 50px;
-            position: relative;
-            height: 100px;
-            left: 20px;
-        }
-
-        .left-body {
+        .card-why {
+            margin: 0 10px;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            // gap: 130px;
 
-            .why-us-text {
-                display: flex;
-                flex-direction: column;
-                gap: 14px;
-
-                .main-text {
-                    color: var(--on-primary);
-                    font-family: 'Rubik', sans-serif;
-                    font-weight: 900;
-                    font-size: 60px;
-                }
-
-                .des-text {
-                    font-size: 30px;
-                    color: var(--on-primary);
-                }
-            }
-
-            .circles {
-                display: flex;
-                gap: 40px;
-                align-items: center;
-
-                .circle {
-                    width: 25px;
-                    height: 25px;
-                    background-color: #FFBC05;
-                    border-radius: 50%;
-                }
+            .att-card {
+                text-align: center;
+                padding: 46px;
+                font-size: 20px;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 900;
+                color: var(--background-header);
+                background-color: var(--on-primary);
+                border-radius: 0 0 5px 5px;
             }
         }
 
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            width: 0.3em;
+            /* Set the width of the scrollbar */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            /* Make the thumb transparent */
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+            /* Make the track transparent */
+        }
     }
 
-    .footer-why-us {
+    .icon {
+        font-size: 40px;
+        position: relative;
+        height: 100px;
+        left: 10px;
+    }
+
+    .left-body {
         display: flex;
-        gap: 25px;
-        margin-bottom: 130px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 100px;
 
-        button {
-            background-color: var(--secoundry);
-            border: none;
-            width: 215px;
-            height: 67px;
-            border-radius: 34px;
-            text-transform: uppercase;
-            color: #fff;
+        .why-us-text {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            .main-text {
+                color: var(--on-primary);
+                font-family: 'Rubik', sans-serif;
+                font-weight: 900;
+                font-size: 60px;
+            }
+
+            .des-text {
+                font-size: 30px;
+                color: var(--on-primary);
+            }
+        }
+
+        .circles {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+
+            .circle {
+                width: 25px;
+                height: 25px;
+                background-color: #FFBC05;
+                border-radius: 50%;
+            }
         }
     }
+
+
+
+
+    .learn-more {
+        background-color: var(--secoundry);
+        border: none;
+        width: 215px;
+        height: 67px;
+        border-radius: 34px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
 
 
 }

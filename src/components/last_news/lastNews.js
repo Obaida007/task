@@ -31,7 +31,14 @@ function LastNews() {
         ))}
       </div>
       <div className="read-last-news">
-        <Image priority width={490} height={60} src={Group58} alt="Group58" />
+        <Image
+          className="Group58"
+          priority
+          width={490}
+          height={60}
+          src={Group58}
+          alt="Group58"
+        />
         <button> read more </button>
       </div>
       <div className="footer-last-news">

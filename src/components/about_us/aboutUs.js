@@ -1,4 +1,5 @@
 import { cards } from "@/common/aboutUs-card";
+import { Col, Row } from "antd";
 import Image from "next/image";
 import React from "react";
 import Group56 from "../../../assets/images/Group56@2x.png";
@@ -16,9 +17,17 @@ function AboutUs() {
           all things workforce and talent-related.
         </p>
       </div>
-      <div className="cards">
+      <Row gutter={[10, 10]} className="cards-about">
         {cards.map((card) => (
-          <div className="card" key={card.title}>
+          <Col
+            lg={12}
+            xl={12}
+            sm={24}
+            xs={24}
+            md={24}
+            className="card-about"
+            key={card.title}
+          >
             <Image
               priority
               width={card.width}
@@ -30,20 +39,21 @@ function AboutUs() {
               <p className="title">{card.title}</p>
               <p className="description">{card.description}</p>
             </div>
-          </div>
+          </Col>
         ))}
-      </div>
-      <div className="footer-aboutUS">
-        {" "}
-        <Image
-          priority
-          width={488}
-          height={60}
-          src={Group56}
-          alt={"Group56"}
-        />{" "}
-        <button> ABOUT US </button>
-      </div>
+        <Col lg={12} xl={12} sm={0} xs={0} md={0}>
+          <Image
+            priority
+            width={488}
+            height={60}
+            src={Group56}
+            alt={"Group56"}
+          />
+        </Col>
+        <Col lg={12} xl={12} sm={24} xs={24} md={24}>
+          <button> ABOUT US </button>
+        </Col>
+      </Row>
     </div>
   );
 }

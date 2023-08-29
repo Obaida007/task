@@ -11,6 +11,7 @@
         font-size: 20px;
 
         a {
+            text-decoration: none;
             color: var(--on-primary);
         }
 
@@ -76,4 +77,39 @@
         opacity: 40%;
     }
 
+}
+
+@media (max-width: 828px) {
+    .footer {
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            .email {
+
+
+                input {
+                    width: 200px;
+                    height: 67px;
+                    border-radius: 34px;
+                    padding: 20px;
+                    border: none;
+                    outline: none;
+                }
+
+                button {
+                    width: 150px;
+                    height: 67px;
+                    background-color: var(--background-header);
+                    border: none;
+                    border-radius: 34px;
+                    color: var(--on-primary);
+                    position: relative;
+                    top: -91px;
+                    left: 150px;
+                }
+            }
+        }
+
+    }
 }

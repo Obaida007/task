@@ -25,13 +25,14 @@
     }
 
     .cards-last-news {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 15px;
 
         a {
             display: flex;
             align-items: center;
-            color: var(--background-header);
+            color: var(--background-header) !important;
             font-family: 'Rubik', sans-serif;
             font-weight: 900;
 
@@ -79,6 +80,7 @@
 
     .footer-last-news {
         height: 349px;
+        width: 100%;
         // background-image: url("../../assets/images/Rectangle75.png");
         background-size: cover;
         display: flex;
@@ -106,4 +108,36 @@
             background-color: #fff;
         }
     }
+}
+
+@media (max-width: 828px) {
+    .lastNews {
+        .cards-last-news {
+            display: flex;
+            flex-direction: column;
+
+            .card-last-news {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .read-last-news {
+            align-items: center;
+            justify-content: center;
+
+            .Group58 {
+                display: none;
+            }
+        }
+
+        .footer-last-news {
+            flex-direction: column;
+            gap: 20px;
+            height: 100%;
+            padding: 20px;
+        }
+    }
+
 }
